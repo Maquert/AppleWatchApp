@@ -15,7 +15,57 @@
 		F5007D391DDE37EF006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D2F1DDE37EF006A2082 /* Assets.xcassets */; };
 		F5007D3A1DDE37EF006A2082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D301DDE37EF006A2082 /* LaunchScreen.storyboard */; };
 		F5007D3B1DDE37EF006A2082 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5007D321DDE37EF006A2082 /* Info.plist */; };
+		F5007D421DDE3B07006A2082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D401DDE3B07006A2082 /* Interface.storyboard */; };
+		F5007D441DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D431DDE3B07006A2082 /* Assets.xcassets */; };
+		F5007D4B1DDE3B07006A2082 /* CounterWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F5007D521DDE3B07006A2082 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D511DDE3B07006A2082 /* InterfaceController.swift */; };
+		F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */; };
+		F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D551DDE3B07006A2082 /* NotificationController.swift */; };
+		F5007D581DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D571DDE3B07006A2082 /* Assets.xcassets */; };
+		F5007D5C1DDE3B07006A2082 /* CounterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5007D3E1DDE3B07006A2082 /* CounterWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5007D4C1DDE3B07006A2082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F527D6F71DDB9D7D00B03827 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5007D491DDE3B07006A2082;
+			remoteInfo = "CounterWatch Extension";
+		};
+		F5007D5A1DDE3B07006A2082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F527D6F71DDB9D7D00B03827 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5007D3D1DDE3B07006A2082;
+			remoteInfo = CounterWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5007D601DDE3B07006A2082 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F5007D4B1DDE3B07006A2082 /* CounterWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5007D641DDE3B07006A2082 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F5007D5C1DDE3B07006A2082 /* CounterWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F5007D251DDE37EF006A2082 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -26,10 +76,28 @@
 		F5007D2F1DDE37EF006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5007D311DDE37EF006A2082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5007D321DDE37EF006A2082 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5007D3E1DDE3B07006A2082 /* CounterWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5007D411DDE3B07006A2082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F5007D431DDE3B07006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5007D451DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5007D501DDE3B07006A2082 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F5007D511DDE3B07006A2082 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F5007D551DDE3B07006A2082 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F5007D571DDE3B07006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5007D591DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F527D6FF1DDB9D7D00B03827 /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F5007D471DDE3B07006A2082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F527D6FC1DDB9D7D00B03827 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,10 +155,43 @@
 			path = AppleWatchApp/Resource;
 			sourceTree = SOURCE_ROOT;
 		};
+		F5007D3F1DDE3B07006A2082 /* CounterWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F5007D401DDE3B07006A2082 /* Interface.storyboard */,
+				F5007D431DDE3B07006A2082 /* Assets.xcassets */,
+				F5007D451DDE3B07006A2082 /* Info.plist */,
+			);
+			path = CounterWatch;
+			sourceTree = "<group>";
+		};
+		F5007D4E1DDE3B07006A2082 /* CounterWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5007D511DDE3B07006A2082 /* InterfaceController.swift */,
+				F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */,
+				F5007D551DDE3B07006A2082 /* NotificationController.swift */,
+				F5007D571DDE3B07006A2082 /* Assets.xcassets */,
+				F5007D591DDE3B07006A2082 /* Info.plist */,
+				F5007D4F1DDE3B07006A2082 /* Supporting Files */,
+			);
+			path = "CounterWatch Extension";
+			sourceTree = "<group>";
+		};
+		F5007D4F1DDE3B07006A2082 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5007D501DDE3B07006A2082 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F527D6F61DDB9D7D00B03827 = {
 			isa = PBXGroup;
 			children = (
-				F527D7011DDB9D7D00B03827 /* AppleWatchApp */,
+				F527D7011DDB9D7D00B03827 /* CounterApp */,
+				F5007D3F1DDE3B07006A2082 /* CounterWatch */,
+				F5007D4E1DDE3B07006A2082 /* CounterWatch Extension */,
 				F527D7001DDB9D7D00B03827 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,11 +200,13 @@
 			isa = PBXGroup;
 			children = (
 				F527D6FF1DDB9D7D00B03827 /* AppleWatchApp.app */,
+				F5007D3E1DDE3B07006A2082 /* CounterWatch.app */,
+				F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F527D7011DDB9D7D00B03827 /* AppleWatchApp */ = {
+		F527D7011DDB9D7D00B03827 /* CounterApp */ = {
 			isa = PBXGroup;
 			children = (
 				F5007D2D1DDE37EF006A2082 /* AppDelegate.swift */,
@@ -111,13 +214,47 @@
 				F5007D241DDE37EF006A2082 /* View */,
 				F5007D2E1DDE37EF006A2082 /* Resource */,
 			);
-			name = AppleWatchApp;
+			name = CounterApp;
 			path = "D_ AppleWatchApp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F5007D3D1DDE3B07006A2082 /* CounterWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5007D611DDE3B07006A2082 /* Build configuration list for PBXNativeTarget "CounterWatch" */;
+			buildPhases = (
+				F5007D3C1DDE3B07006A2082 /* Resources */,
+				F5007D601DDE3B07006A2082 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5007D4D1DDE3B07006A2082 /* PBXTargetDependency */,
+			);
+			name = CounterWatch;
+			productName = CounterWatch;
+			productReference = F5007D3E1DDE3B07006A2082 /* CounterWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F5007D491DDE3B07006A2082 /* CounterWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5007D5D1DDE3B07006A2082 /* Build configuration list for PBXNativeTarget "CounterWatch Extension" */;
+			buildPhases = (
+				F5007D461DDE3B07006A2082 /* Sources */,
+				F5007D471DDE3B07006A2082 /* Frameworks */,
+				F5007D481DDE3B07006A2082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CounterWatch Extension";
+			productName = "CounterWatch Extension";
+			productReference = F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		F527D6FE1DDB9D7D00B03827 /* AppleWatchApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F527D7111DDB9D7D00B03827 /* Build configuration list for PBXNativeTarget "AppleWatchApp" */;
@@ -125,10 +262,12 @@
 				F527D6FB1DDB9D7D00B03827 /* Sources */,
 				F527D6FC1DDB9D7D00B03827 /* Frameworks */,
 				F527D6FD1DDB9D7D00B03827 /* Resources */,
+				F5007D641DDE3B07006A2082 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F5007D5B1DDE3B07006A2082 /* PBXTargetDependency */,
 			);
 			name = AppleWatchApp;
 			productName = "D_ AppleWatchApp";
@@ -145,6 +284,15 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Miguel Hernández Jaso";
 				TargetAttributes = {
+					F5007D3D1DDE3B07006A2082 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					F5007D491DDE3B07006A2082 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2JBP2DRL27;
+						ProvisioningStyle = Automatic;
+					};
 					F527D6FE1DDB9D7D00B03827 = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -166,11 +314,30 @@
 			projectRoot = "";
 			targets = (
 				F527D6FE1DDB9D7D00B03827 /* AppleWatchApp */,
+				F5007D3D1DDE3B07006A2082 /* CounterWatch */,
+				F5007D491DDE3B07006A2082 /* CounterWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F5007D3C1DDE3B07006A2082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5007D441DDE3B07006A2082 /* Assets.xcassets in Resources */,
+				F5007D421DDE3B07006A2082 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5007D481DDE3B07006A2082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5007D581DDE3B07006A2082 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F527D6FD1DDB9D7D00B03827 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +352,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F5007D461DDE3B07006A2082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */,
+				F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */,
+				F5007D521DDE3B07006A2082 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F527D6FB1DDB9D7D00B03827 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +375,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F5007D4D1DDE3B07006A2082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5007D491DDE3B07006A2082 /* CounterWatch Extension */;
+			targetProxy = F5007D4C1DDE3B07006A2082 /* PBXContainerItemProxy */;
+		};
+		F5007D5B1DDE3B07006A2082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5007D3D1DDE3B07006A2082 /* CounterWatch */;
+			targetProxy = F5007D5A1DDE3B07006A2082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F5007D301DDE37EF006A2082 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -207,9 +397,87 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F5007D401DDE3B07006A2082 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5007D411DDE3B07006A2082 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F5007D5E1DDE3B07006A2082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2JBP2DRL27;
+				INFOPLIST_FILE = "CounterWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F5007D5F1DDE3B07006A2082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2JBP2DRL27;
+				INFOPLIST_FILE = "CounterWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F5007D621DDE3B07006A2082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = CounterWatch_Extension;
+				INFOPLIST_FILE = CounterWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F5007D631DDE3B07006A2082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = CounterWatch_Extension;
+				INFOPLIST_FILE = CounterWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		F527D70F1DDB9D7D00B03827 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -335,6 +603,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F5007D5D1DDE3B07006A2082 /* Build configuration list for PBXNativeTarget "CounterWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5007D5E1DDE3B07006A2082 /* Debug */,
+				F5007D5F1DDE3B07006A2082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5007D611DDE3B07006A2082 /* Build configuration list for PBXNativeTarget "CounterWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5007D621DDE3B07006A2082 /* Debug */,
+				F5007D631DDE3B07006A2082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F527D6FA1DDB9D7D00B03827 /* Build configuration list for PBXProject "AppleWatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

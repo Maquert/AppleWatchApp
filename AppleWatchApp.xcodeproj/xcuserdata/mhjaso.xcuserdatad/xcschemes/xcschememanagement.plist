@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CounterWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>CounterWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>D_ AppleWatchApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F5007D3D1DDE3B07006A2082</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F527D6FE1DDB9D7D00B03827</key>
 		<dict>
 			<key>primary</key>
