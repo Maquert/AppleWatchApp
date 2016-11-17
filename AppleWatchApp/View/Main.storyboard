@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C32e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counter Presenter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController providesPresentationContextTransitionStyle="YES" id="BYZ-38-t0r" customClass="CounterPresenter" customModule="D__AppleWatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD1-2z-e9q">
+                                <rect key="frame" x="102.5" y="180" width="115.5" height="28"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TQ0-pi-eQ2">
+                                <rect key="frame" x="113" y="364" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="steeperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WN4-Ol-d8q"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djD-6I-5Hp">
+                                <rect key="frame" x="144.5" y="254" width="32" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="i3G-dn-vlw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.085350550518134671" green="0.085350550518134671" blue="0.085350550518134671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TQ0-pi-eQ2" firstAttribute="top" secondItem="djD-6I-5Hp" secondAttribute="bottom" constant="50" id="AXg-A9-ZpE"/>
+                            <constraint firstItem="TQ0-pi-eQ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HGm-EL-drM"/>
+                            <constraint firstItem="djD-6I-5Hp" firstAttribute="centerX" secondItem="iD1-2z-e9q" secondAttribute="centerX" id="UhJ-ln-qf3"/>
+                            <constraint firstItem="iD1-2z-e9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kfH-0O-Tmx"/>
+                            <constraint firstItem="djD-6I-5Hp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kj5-uy-d1j"/>
+                            <constraint firstItem="djD-6I-5Hp" firstAttribute="top" secondItem="iD1-2z-e9q" secondAttribute="bottom" constant="46" id="pjm-QF-dzb"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="counter" destination="djD-6I-5Hp" id="dpk-dz-eoJ"/>
+                        <outlet property="steeper" destination="TQ0-pi-eQ2" id="htG-qU-fax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
