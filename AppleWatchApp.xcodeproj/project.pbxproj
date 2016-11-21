@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F5007D331DDE37EF006A2082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D251DDE37EF006A2082 /* Main.storyboard */; };
-		F5007D351DDE37EF006A2082 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
 		F5007D361DDE37EF006A2082 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D2A1DDE37EF006A2082 /* NotificationsManager.swift */; };
 		F5007D371DDE37EF006A2082 /* CounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D2C1DDE37EF006A2082 /* CounterPresenter.swift */; };
 		F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D2D1DDE37EF006A2082 /* AppDelegate.swift */; };
@@ -18,11 +17,12 @@
 		F5007D421DDE3B07006A2082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D401DDE3B07006A2082 /* Interface.storyboard */; };
 		F5007D441DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D431DDE3B07006A2082 /* Assets.xcassets */; };
 		F5007D4B1DDE3B07006A2082 /* CounterWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F5007D521DDE3B07006A2082 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D511DDE3B07006A2082 /* InterfaceController.swift */; };
+		F5007D521DDE3B07006A2082 /* CounterWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D511DDE3B07006A2082 /* CounterWatchController.swift */; };
 		F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */; };
 		F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D551DDE3B07006A2082 /* NotificationController.swift */; };
 		F5007D581DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D571DDE3B07006A2082 /* Assets.xcassets */; };
 		F5007D5C1DDE3B07006A2082 /* CounterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5007D3E1DDE3B07006A2082 /* CounterWatch.app */; };
+		F56DF6F71E114C38008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,7 @@
 		F5007D451DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5007D501DDE3B07006A2082 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		F5007D511DDE3B07006A2082 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F5007D511DDE3B07006A2082 /* CounterWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWatchController.swift; sourceTree = "<group>"; };
 		F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F5007D551DDE3B07006A2082 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F5007D571DDE3B07006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		F5007D4E1DDE3B07006A2082 /* CounterWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F5007D511DDE3B07006A2082 /* InterfaceController.swift */,
+				F5007D511DDE3B07006A2082 /* CounterWatchController.swift */,
 				F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */,
 				F5007D551DDE3B07006A2082 /* NotificationController.swift */,
 				F5007D571DDE3B07006A2082 /* Assets.xcassets */,
@@ -358,7 +358,7 @@
 			files = (
 				F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */,
 				F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */,
-				F5007D521DDE3B07006A2082 /* InterfaceController.swift in Sources */,
+				F5007D521DDE3B07006A2082 /* CounterWatchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,9 +367,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5007D371DDE37EF006A2082 /* CounterPresenter.swift in Sources */,
-				F5007D351DDE37EF006A2082 /* Constants.swift in Sources */,
 				F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */,
 				F5007D361DDE37EF006A2082 /* NotificationsManager.swift in Sources */,
+				F56DF6F71E114C38008E913E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +610,7 @@
 				F5007D5F1DDE3B07006A2082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5007D611DDE3B07006A2082 /* Build configuration list for PBXNativeTarget "CounterWatch" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +619,7 @@
 				F5007D631DDE3B07006A2082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F527D6FA1DDB9D7D00B03827 /* Build configuration list for PBXProject "AppleWatchApp" */ = {
 			isa = XCConfigurationList;

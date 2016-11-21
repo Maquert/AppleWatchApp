@@ -9,17 +9,29 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Counter Watch Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CounterWatch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="CounterWatchController" customModule="CounterWatch_Extension">
                     <items>
                         <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="Shg-nW-Txu">
                             <fontDescription key="font" type="system" pointSize="40"/>
                         </label>
-                        <slider width="1" alignment="center" verticalAlignment="center" continuous="YES" value="50" maximum="100" steps="100" id="hOT-P8-UlI"/>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="UPDATE" id="Rpu-UE-LII"/>
+                        <slider width="1" alignment="center" verticalAlignment="center" continuous="YES" value="50" maximum="100" steps="100" id="hOT-P8-UlI">
+                            <connections>
+                                <action selector="steeperValueChangedWithValue:" destination="AgC-eL-Hgc" id="Yoa-tc-kGZ"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="UPDATE" id="Rpu-UE-LII">
+                            <connections>
+                                <action selector="updateButtonTapped:" destination="AgC-eL-Hgc" id="GLQ-Lp-V0k"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="counter" destination="Shg-nW-Txu" id="To7-fc-wL7"/>
+                        <outlet property="steeper" destination="hOT-P8-UlI" id="l1N-OT-Hgf"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
