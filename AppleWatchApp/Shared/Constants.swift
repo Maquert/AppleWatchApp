@@ -8,6 +8,7 @@ import Foundation
 
 extension Notification.Name {
     static let NotificationKeyReceivedWatchAppContext = Notification.Name("NotificationKeyReceivedWatchAppContext")
+    static let NotificationKeyReceivedAppContext = Notification.Name("NotificationKeyReceivedAppContext")
 }
 
 

@@ -13,19 +13,18 @@
 		F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D2D1DDE37EF006A2082 /* AppDelegate.swift */; };
 		F5007D391DDE37EF006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D2F1DDE37EF006A2082 /* Assets.xcassets */; };
 		F5007D3A1DDE37EF006A2082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D301DDE37EF006A2082 /* LaunchScreen.storyboard */; };
-		F5007D3B1DDE37EF006A2082 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5007D321DDE37EF006A2082 /* Info.plist */; };
 		F5007D421DDE3B07006A2082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D401DDE3B07006A2082 /* Interface.storyboard */; };
 		F5007D441DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D431DDE3B07006A2082 /* Assets.xcassets */; };
 		F5007D4B1DDE3B07006A2082 /* CounterWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F5007D5C1DDE3B07006A2082 /* CounterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5007D3E1DDE3B07006A2082 /* CounterWatch.app */; };
-		F56DF6FA1E114EA3008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
-		F56DF6FB1E114EA4008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
+		F56DF7001E115093008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56DF6FF1E115093008E913E /* Constants.swift */; };
+		F56DF7011E1150A1008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56DF6FF1E115093008E913E /* Constants.swift */; };
 		F5D3BBB21DE4CA79005BECDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBAF1DE4CA79005BECDE /* Assets.xcassets */; };
-		F5D3BBB31DE4CA79005BECDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBB01DE4CA79005BECDE /* Info.plist */; };
 		F5D3BBB41DE4CA79005BECDE /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBB11DE4CA79005BECDE /* PushNotificationPayload.apns */; };
 		F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB61DE4CA9B005BECDE /* CounterWatchController.swift */; };
 		F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */; };
 		F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */; };
+		F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +71,6 @@
 
 /* Begin PBXFileReference section */
 		F5007D251DDE37EF006A2082 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		F5007D281DDE37EF006A2082 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5007D2A1DDE37EF006A2082 /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		F5007D2C1DDE37EF006A2082 /* CounterPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPresenter.swift; sourceTree = "<group>"; };
 		F5007D2D1DDE37EF006A2082 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppleWatchApp/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -85,12 +83,14 @@
 		F5007D451DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F527D6FF1DDB9D7D00B03827 /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56DF6FF1E115093008E913E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F5D3BBAF1DE4CA79005BECDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5D3BBB01DE4CA79005BECDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D3BBB11DE4CA79005BECDE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F5D3BBB61DE4CA9B005BECDE /* CounterWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterWatchController.swift; sourceTree = "<group>"; };
 		F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,6 @@
 			children = (
 				F5007D2B1DDE37EF006A2082 /* Presenter */,
 				F5007D291DDE37EF006A2082 /* Notifications */,
-				F5007D281DDE37EF006A2082 /* Constants.swift */,
 			);
 			name = Class;
 			path = AppleWatchApp/Class;
@@ -200,6 +199,7 @@
 		F527D7011DDB9D7D00B03827 /* CounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				F5D3BBC51DE4CC3A005BECDE /* Shared */,
 				F5007D2D1DDE37EF006A2082 /* AppDelegate.swift */,
 				F5007D261DDE37EF006A2082 /* Class */,
 				F5007D241DDE37EF006A2082 /* View */,
@@ -222,6 +222,7 @@
 		F5D3BBB51DE4CA9B005BECDE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F5D3BBBE1DE4CB66005BECDE /* Notifications */,
 				F5D3BBBC1DE4CAA3005BECDE /* Controller */,
 				F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */,
 				F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */,
@@ -236,6 +237,23 @@
 			);
 			name = Controller;
 			sourceTree = "<group>";
+		};
+		F5D3BBBE1DE4CB66005BECDE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F5D3BBC51DE4CC3A005BECDE /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F56DF6FF1E115093008E913E /* Constants.swift */,
+			);
+			name = Shared;
+			path = AppleWatchApp/Shared;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -353,7 +371,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D3BBB31DE4CA79005BECDE /* Info.plist in Resources */,
 				F5D3BBB21DE4CA79005BECDE /* Assets.xcassets in Resources */,
 				F5D3BBB41DE4CA79005BECDE /* PushNotificationPayload.apns in Resources */,
 			);
@@ -363,7 +380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5007D3B1DDE37EF006A2082 /* Info.plist in Resources */,
 				F5007D3A1DDE37EF006A2082 /* LaunchScreen.storyboard in Resources */,
 				F5007D391DDE37EF006A2082 /* Assets.xcassets in Resources */,
 				F5007D331DDE37EF006A2082 /* Main.storyboard in Resources */,
@@ -377,9 +393,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F56DF6FB1E114EA4008E913E /* Constants.swift in Sources */,
+				F56DF7011E1150A1008E913E /* Constants.swift in Sources */,
 				F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */,
 				F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */,
+				F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */,
 				F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,10 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56DF7001E115093008E913E /* Constants.swift in Sources */,
 				F5007D371DDE37EF006A2082 /* CounterPresenter.swift in Sources */,
 				F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */,
 				F5007D361DDE37EF006A2082 /* NotificationsManager.swift in Sources */,
-				F56DF6FA1E114EA3008E913E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
