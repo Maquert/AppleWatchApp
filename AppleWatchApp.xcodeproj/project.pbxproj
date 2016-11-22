@@ -25,6 +25,10 @@
 		F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */; };
 		F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */; };
 		F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */; };
+		F5D3BBC71DE4CC3A005BECDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBC61DE4CC3A005BECDE /* Constants.swift */; };
+		F5D3BBC81DE4CC43005BECDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBC61DE4CC3A005BECDE /* Constants.swift */; };
+		F5D3BBCB1DE4D643005BECDE /* WatchInterfaceCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */; };
+		F5D3BBCD1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,9 @@
 		F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		F5D3BBC61DE4CC3A005BECDE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchInterfaceCommunicator.swift; sourceTree = "<group>"; };
+		F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchInterfaceCommunicatorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +233,7 @@
 				F5D3BBBC1DE4CAA3005BECDE /* Controller */,
 				F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */,
 				F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */,
+				F5D3BBC91DE4D643005BECDE /* Communicator */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -254,6 +262,15 @@
 			name = Shared;
 			path = AppleWatchApp/Shared;
 			sourceTree = SOURCE_ROOT;
+		};
+		F5D3BBC91DE4D643005BECDE /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */,
+				F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */,
+			);
+			path = Communicator;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -395,7 +412,9 @@
 			files = (
 				F56DF7011E1150A1008E913E /* Constants.swift in Sources */,
 				F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */,
+				F5D3BBCB1DE4D643005BECDE /* WatchInterfaceCommunicator.swift in Sources */,
 				F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */,
+				F5D3BBCD1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift in Sources */,
 				F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */,
 				F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */,
 			);
