@@ -30,10 +30,18 @@ class CounterWatchController: WKInterfaceController
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        NotificationsManager.subscribeToStatusChanges(object: self, selector: #selector(statusChanged))
         
         guard let count = context as? Int else {
             return
         }
+        self.count = count
+    }
+    
+    
+    func statusChanged(notification: NSNotification) {
+        guard let count = notification.object as? CountType
+            else { return }
         self.count = count
     }
     
@@ -47,6 +55,6 @@ class CounterWatchController: WKInterfaceController
     }
     
     @IBAction func updateButtonTapped(_ sender: WKInterfaceButton) {
-        // Submit new status to phone
+        NotificationsManager.sendStatus(status: self.count)
     }
 }
