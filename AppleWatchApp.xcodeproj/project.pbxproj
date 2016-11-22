@@ -17,12 +17,15 @@
 		F5007D421DDE3B07006A2082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5007D401DDE3B07006A2082 /* Interface.storyboard */; };
 		F5007D441DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D431DDE3B07006A2082 /* Assets.xcassets */; };
 		F5007D4B1DDE3B07006A2082 /* CounterWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F5007D521DDE3B07006A2082 /* CounterWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D511DDE3B07006A2082 /* CounterWatchController.swift */; };
-		F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */; };
-		F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D551DDE3B07006A2082 /* NotificationController.swift */; };
-		F5007D581DDE3B07006A2082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5007D571DDE3B07006A2082 /* Assets.xcassets */; };
 		F5007D5C1DDE3B07006A2082 /* CounterWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F5007D3E1DDE3B07006A2082 /* CounterWatch.app */; };
-		F56DF6F71E114C38008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
+		F56DF6FA1E114EA3008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
+		F56DF6FB1E114EA4008E913E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5007D281DDE37EF006A2082 /* Constants.swift */; };
+		F5D3BBB21DE4CA79005BECDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBAF1DE4CA79005BECDE /* Assets.xcassets */; };
+		F5D3BBB31DE4CA79005BECDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBB01DE4CA79005BECDE /* Info.plist */; };
+		F5D3BBB41DE4CA79005BECDE /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F5D3BBB11DE4CA79005BECDE /* PushNotificationPayload.apns */; };
+		F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB61DE4CA9B005BECDE /* CounterWatchController.swift */; };
+		F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */; };
+		F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +84,13 @@
 		F5007D431DDE3B07006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5007D451DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5007D4A1DDE3B07006A2082 /* CounterWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5007D501DDE3B07006A2082 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		F5007D511DDE3B07006A2082 /* CounterWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWatchController.swift; sourceTree = "<group>"; };
-		F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		F5007D551DDE3B07006A2082 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		F5007D571DDE3B07006A2082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5007D591DDE3B07006A2082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F527D6FF1DDB9D7D00B03827 /* AppleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D3BBAF1DE4CA79005BECDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5D3BBB01DE4CA79005BECDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D3BBB11DE4CA79005BECDE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F5D3BBB61DE4CA9B005BECDE /* CounterWatchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterWatchController.swift; sourceTree = "<group>"; };
+		F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,22 +171,10 @@
 		F5007D4E1DDE3B07006A2082 /* CounterWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F5007D511DDE3B07006A2082 /* CounterWatchController.swift */,
-				F5007D531DDE3B07006A2082 /* ExtensionDelegate.swift */,
-				F5007D551DDE3B07006A2082 /* NotificationController.swift */,
-				F5007D571DDE3B07006A2082 /* Assets.xcassets */,
-				F5007D591DDE3B07006A2082 /* Info.plist */,
-				F5007D4F1DDE3B07006A2082 /* Supporting Files */,
+				F5D3BBB51DE4CA9B005BECDE /* Class */,
+				F5D3BBAE1DE4CA79005BECDE /* Resources */,
 			);
 			path = "CounterWatch Extension";
-			sourceTree = "<group>";
-		};
-		F5007D4F1DDE3B07006A2082 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F5007D501DDE3B07006A2082 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F527D6F61DDB9D7D00B03827 = {
@@ -216,6 +207,34 @@
 			);
 			name = CounterApp;
 			path = "D_ AppleWatchApp";
+			sourceTree = "<group>";
+		};
+		F5D3BBAE1DE4CA79005BECDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3BBAF1DE4CA79005BECDE /* Assets.xcassets */,
+				F5D3BBB01DE4CA79005BECDE /* Info.plist */,
+				F5D3BBB11DE4CA79005BECDE /* PushNotificationPayload.apns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5D3BBB51DE4CA9B005BECDE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3BBBC1DE4CAA3005BECDE /* Controller */,
+				F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */,
+				F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F5D3BBBC1DE4CAA3005BECDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3BBB61DE4CA9B005BECDE /* CounterWatchController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +353,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5007D581DDE3B07006A2082 /* Assets.xcassets in Resources */,
+				F5D3BBB31DE4CA79005BECDE /* Info.plist in Resources */,
+				F5D3BBB21DE4CA79005BECDE /* Assets.xcassets in Resources */,
+				F5D3BBB41DE4CA79005BECDE /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,9 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5007D561DDE3B07006A2082 /* NotificationController.swift in Sources */,
-				F5007D541DDE3B07006A2082 /* ExtensionDelegate.swift in Sources */,
-				F5007D521DDE3B07006A2082 /* CounterWatchController.swift in Sources */,
+				F56DF6FB1E114EA4008E913E /* Constants.swift in Sources */,
+				F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */,
+				F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */,
+				F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +391,7 @@
 				F5007D371DDE37EF006A2082 /* CounterPresenter.swift in Sources */,
 				F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */,
 				F5007D361DDE37EF006A2082 /* NotificationsManager.swift in Sources */,
-				F56DF6F71E114C38008E913E /* Constants.swift in Sources */,
+				F56DF6FA1E114EA3008E913E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 2JBP2DRL27;
-				INFOPLIST_FILE = "CounterWatch Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CounterWatch Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -430,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = 2JBP2DRL27;
-				INFOPLIST_FILE = "CounterWatch Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/CounterWatch Extension/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kc.mhjaso.AppleWatchApp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
