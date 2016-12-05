@@ -12,6 +12,10 @@ class NotificationsManager
         NotificationCenter.default.addObserver(object, selector: selector, name: .NotificationKeyReceivedAppContext, object: nil)
     }
     
+    static func subscribeToCounterPartRequests(object: Any, selector: Selector) {
+        NotificationCenter.default.addObserver(object, selector: selector, name: .NotificationKeyReceivedWatchAppContext, object: nil)
+    }
+    
     /// From the phone to the watch
     static func postStatus(status: CountType) {
         let notification = Notification(name: .NotificationKeyReceivedAppContext, object: status)

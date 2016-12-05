@@ -17,6 +17,10 @@ enum PayloadKeys: String {
     case Counter = "CounterKey"
     
     var key: String { return self.rawValue }
+    
+    func dictionary(count: CountType) -> CounterDictType {
+        return [self.key : count]
+    }
 }
 
 
