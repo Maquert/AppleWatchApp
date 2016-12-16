@@ -25,10 +25,10 @@
 		F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */; };
 		F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */; };
 		F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */; };
-		F5D3BBC71DE4CC3A005BECDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBC61DE4CC3A005BECDE /* Constants.swift */; };
-		F5D3BBC81DE4CC43005BECDE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBC61DE4CC3A005BECDE /* Constants.swift */; };
-		F5D3BBCB1DE4D643005BECDE /* WatchInterfaceCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */; };
 		F5D3BBCD1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */; };
+		F5D55B791E0487B0004A7C91 /* AppInterfaceCommunicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D55B781E0487B0004A7C91 /* AppInterfaceCommunicatorExtension.swift */; };
+		F5D55B7B1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D55B7A1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift */; };
+		F5D55B7C1E0487E4004A7C91 /* WatchInterfaceCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D55B7A1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +95,9 @@
 		F5D3BBB71DE4CA9B005BECDE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F5D3BBB81DE4CA9B005BECDE /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F5D3BBBF1DE4CB66005BECDE /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
-		F5D3BBC61DE4CC3A005BECDE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchInterfaceCommunicator.swift; sourceTree = "<group>"; };
 		F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchInterfaceCommunicatorExtension.swift; sourceTree = "<group>"; };
+		F5D55B781E0487B0004A7C91 /* AppInterfaceCommunicatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppInterfaceCommunicatorExtension.swift; path = Communicator/AppInterfaceCommunicatorExtension.swift; sourceTree = "<group>"; };
+		F5D55B7A1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchInterfaceCommunicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,7 @@
 		F5007D261DDE37EF006A2082 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				F5D55B771E048798004A7C91 /* Communicator */,
 				F5007D2B1DDE37EF006A2082 /* Presenter */,
 				F5007D291DDE37EF006A2082 /* Notifications */,
 			);
@@ -258,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				F56DF6FF1E115093008E913E /* Constants.swift */,
+				F5D55B7A1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift */,
 			);
 			name = Shared;
 			path = AppleWatchApp/Shared;
@@ -266,10 +268,17 @@
 		F5D3BBC91DE4D643005BECDE /* Communicator */ = {
 			isa = PBXGroup;
 			children = (
-				F5D3BBCA1DE4D643005BECDE /* WatchInterfaceCommunicator.swift */,
 				F5D3BBCC1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift */,
 			);
 			path = Communicator;
+			sourceTree = "<group>";
+		};
+		F5D55B771E048798004A7C91 /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				F5D55B781E0487B0004A7C91 /* AppInterfaceCommunicatorExtension.swift */,
+			);
+			name = Communicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,9 +421,9 @@
 			files = (
 				F56DF7011E1150A1008E913E /* Constants.swift in Sources */,
 				F5D3BBBB1DE4CA9B005BECDE /* NotificationController.swift in Sources */,
-				F5D3BBCB1DE4D643005BECDE /* WatchInterfaceCommunicator.swift in Sources */,
 				F5D3BBBA1DE4CA9B005BECDE /* ExtensionDelegate.swift in Sources */,
 				F5D3BBCD1DE4D7E6005BECDE /* WatchInterfaceCommunicatorExtension.swift in Sources */,
+				F5D55B7C1E0487E4004A7C91 /* WatchInterfaceCommunicator.swift in Sources */,
 				F5D3BBC01DE4CB66005BECDE /* NotificationsManager.swift in Sources */,
 				F5D3BBB91DE4CA9B005BECDE /* CounterWatchController.swift in Sources */,
 			);
@@ -426,8 +435,10 @@
 			files = (
 				F56DF7001E115093008E913E /* Constants.swift in Sources */,
 				F5007D371DDE37EF006A2082 /* CounterPresenter.swift in Sources */,
+				F5D55B7B1E0487D6004A7C91 /* WatchInterfaceCommunicator.swift in Sources */,
 				F5007D381DDE37EF006A2082 /* AppDelegate.swift in Sources */,
 				F5007D361DDE37EF006A2082 /* NotificationsManager.swift in Sources */,
+				F5D55B791E0487B0004A7C91 /* AppInterfaceCommunicatorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -620,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

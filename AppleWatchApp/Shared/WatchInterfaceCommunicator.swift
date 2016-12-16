@@ -57,6 +57,11 @@ class WatchInterfaceCommunicator: NSObject, WCSessionDelegate
     
     // MARK: Delegate
     
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("WatchInterfaceCommunicator >> Received app context \(applicationContext)")
+        postAppRequestNotification(message: applicationContext)
+    }
+    
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         print("WatchInterfaceCommunicator >> Received app message \(message)")
         postAppRequestNotification(message: message)
