@@ -4,15 +4,20 @@ import Foundation
 
 
 
+protocol WatchInterfaceCommunicatorProtocol {
+    associatedtype CommunicatorMessage = [String : Any]
+    func postAppRequestNotification(message: CommunicatorMessage)
+}
+
 
 /// Handles incoming and outcoming data between watchOS and iOS
 /// Disclaimer: All transfers are async!
-class WatchInterfaceCommunicator: NSObject, WCSessionDelegate
+class WatchInterfaceCommunicator: NSObject, WCSessionDelegate, WatchInterfaceCommunicatorProtocol
 {
     // MARK: Attributes
     var session: WCSession!
-    typealias CommunicatorMessage = [String : Any]
     
+    typealias CommunicatorMessage = [String : Any]
     
     
     
