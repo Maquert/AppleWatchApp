@@ -10,7 +10,9 @@ extension WatchInterfaceCommunicator
         guard let countValue = message[PayloadKeys.Counter.key] as? CountType else {
             return
         }
-        NotificationsManager.postStatus(status: countValue)
+        DispatchQueue.main.async {
+            NotificationsManager.postStatus(status: countValue)
+        }
     }
 }
 
