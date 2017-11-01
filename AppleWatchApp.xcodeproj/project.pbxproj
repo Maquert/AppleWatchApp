@@ -214,7 +214,7 @@
 				F5007D2E1DDE37EF006A2082 /* Resource */,
 			);
 			name = CounterApp;
-			path = "D_ AppleWatchApp";
+			path = AppleWatchApp;
 			sourceTree = "<group>";
 		};
 		F5D3BBAE1DE4CA79005BECDE /* Resources */ = {
